@@ -2,7 +2,7 @@
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 
 */
-package cmd
+package net
 
 import (
 	"fmt"
@@ -10,23 +10,19 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// netCmd represents the net command
-var netCmd = &cobra.Command{
+// NetCmd represents the net command
+var NetCmd = &cobra.Command{
 	Use:   "net",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Net is a palette that contains network based commands",
+	Long: ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("net called")
+		//fmt.Println("net called")
+		cmd.Help()
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(netCmd)
+	//rootCmd.AddCommand(netCmd)
 
 	// Here you will define your flags and configuration settings.
 
